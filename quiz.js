@@ -9,6 +9,11 @@ let scoreCount = 0;
 let questionCount = 0;
 let availableQuestions = [];
 
+/*let Option1 = document.getElementById("option1");
+let Option2 = document.getElementById("option2");
+let Option3 = document.getElementById("option3");
+let Option4 = document.getElementById("option4");*/
+
 let questions = [
   {
     question: "How is COVID-19 passed on?",
@@ -136,21 +141,18 @@ options.forEach(option => {
 
     const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
+    selectedOption.parentElement.classList.add(classToApply);
+
     if(classToApply === "correct") {
       incrementScoreCount(scorePoint);
+      selectedOption.parentElement.classList.add(classToApply);
     }
 
-    selectedOption.parentElement.classList.add(classToApply);    
-
-    document.getElementById("next").addEventListener("click", getNewQuestion);
-
-    selectedOption.parentElement.classList.remove(classToApply);
-
-    /*setTimeout(() => {
+    setTimeout(() => {
       selectedOption.parentElement.classList.remove(classToApply);
 
       document.getElementById("next").addEventListener("click", getNewQuestion);
-    }, 1000);*/
+    }, 1000);
   });
 });
 
