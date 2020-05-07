@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quiz.css">
+  <title>Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <div id="quiz" class="justify-center flex-column">
+      <div id="head-display">
+        <div id="head-display-item">
+          <p class="head-display-prefix">
+            Question
+          </p>
+          <h1 class="head-display-main-text"  id="questionCounter"></h1>
+        </div>
+        <div id="head-display-item">
+          <p class="head-display-prefix">
+            Score
+          </p>
+          <h1 class="head-display-main-text"  id="scoreCounter">
+            0
+          </h1>
+        </div>
+      </div>
+      <h2 id="question">What is the question?</h2>
+      <div class="option">
+        <p class="option-alphabet">A</p>
+        <p class="option-text" data-number="1">option 1</p>
+      </div>
+      <div class="option">
+        <p class="option-alphabet">B</p>
+        <p class="option-text" data-number="2">option 2</p>
+      </div>
+      <div class="option">
+        <p class="option-alphabet">C</p>
+        <p class="option-text" data-number="3">option 3</p>
+      </div>
+      <div class="option">
+        <p class="option-alphabet">D</p>
+        <p class="option-text" data-number="4">option 4</p>
+      </div>
+      <button id="next" class="btn">Next</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
