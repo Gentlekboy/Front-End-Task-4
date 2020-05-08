@@ -111,7 +111,7 @@ p{
   padding: 1rem 1rem 0.5rem 1rem;
 }
 
-@media screen and (device-width: 1300px){
+@media screen and (max-width: 1300px){
 
   .container{
     width: 90%;
@@ -131,7 +131,7 @@ p{
 
 }
 
-@media screen and (device-width: 1030px){
+@media screen and (max-width: 1030px){
 
   .container{
     width: 88%;
@@ -151,7 +151,7 @@ p{
 
 }
 
-@media screen and (device-width: 724px){
+@media screen and (max-width: 724px){
 
   h1{
     font-size: 4rem;
@@ -167,7 +167,7 @@ p{
 
 }
 
-@media screen and (device-width: 503px){
+@media screen and (max-width: 503px){
 
   h1{
     font-size: 3.2rem;
@@ -183,14 +183,14 @@ p{
 
 }
 
-@media screen and (device-width: 422px){
+@media screen and (max-width: 422px){
 
   .container{
-    width: 88%;
+    width: 80%;
   }
 
   h1{
-    font-size: 2.5rem;
+    font-size: 300%;
   }
 
   h2{
@@ -198,12 +198,12 @@ p{
   }
 
   .footer-text{
-    font-size: 1.5rem;
+    font-size: 120%;
   }
 
 }
 
-@media screen and (device-height: 420px){
+@media screen and (max-height: 420px){
 
   #result-footer{
     display: none;
@@ -216,7 +216,7 @@ p{
 
 }
 
-@media screen and (device-height: 350px){
+@media screen and (max-height: 350px){
 
   .container{
     width: 88%;

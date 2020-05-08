@@ -99,7 +99,7 @@
   background-color: red;
 }
 
-@media screen and (device-width: 550px){
+@media screen and (max-width: 550px){
 
   .container{
     width: 100vw;
@@ -147,7 +147,7 @@
 
 }
 
-@media screen and (device-height: 465px){
+@media screen and (max-height: 465px){
   *{
     font-size: 95%;
   }
