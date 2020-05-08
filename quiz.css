@@ -98,3 +98,79 @@
 .incorrect{
   background-color: red;
 }
+
+@media screen and (max-width: 550px){
+
+  .container{
+    width: 100vw;
+  }
+
+  #quiz{
+    width: 120%;
+    height: 100vh;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0;
+  }
+
+  #head-display{
+    margin: 0;
+    height: 15%;
+  }
+
+  #head-display-item{
+    height: 40%;
+  }
+
+  .head-display-prefix, .head-display-main-text{
+    font-size: 150%;
+  }
+
+  #question{
+    font-size: 250%;
+    margin: 0;
+  }
+
+  #opt{
+    height: 13%;
+    margin-top: 2%;
+  }
+
+  .option-alphabet, .option-text{
+    padding: 3%;
+  }
+
+  .option-text{
+    display: block;
+    font-size: 90%;
+  }
+
+}
+
+@media screen and (max-height: 465px){
+  *{
+    font-size: 95%;
+  }
+
+  #head-display{
+    border-bottom: none;
+  }
+
+  .option-text, .option-alphabet{
+    display: block;
+    font-size: 70%;
+    padding: 1%;
+  }
+
+  #opt{
+    height: 12.5%;
+    margin-top: 0;
+  }
+
+  #next{
+    width: 40%;
+    height: 10%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+  }
+}
