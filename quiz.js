@@ -97,7 +97,7 @@ let questions = [
   }
 ];
 
-const scorePoint = 2;
+const scorePoint = 20;
 const maxQuestions = 5;
 
 startGame = () => {
@@ -108,8 +108,10 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-  if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+  if (availableQuestions.length === 0 || questionCount >= maxQuestions) {
     //go to the end page
+    localStorage.setItem("mostRecentScore", scoreCount);
+
     return window.location.assign("end.html");
   }
 
