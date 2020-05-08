@@ -2,18 +2,67 @@
   box-sizing: border-box;
 }
 
+/*HEAD DISPLAY*/
+
+#head-display{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 23.25%;
+  border-bottom: 0.1rem solid yellow;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.head-display-prefix{
+  border: 0.1rem solid white;
+  padding: 0.3rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+.head-display-main-text{
+  text-align: center;
+  border: 0.1rem solid white;
+  padding: 0.3rem;
+  background-image: linear-gradient( rgb(177, 21, 21), rgb(87, 40, 40));
+}
+
+#head-display-item{
+  padding: 0.3rem;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(112, 96, 96, 0.5);
+}
+
+#question{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+
 #quiz{
   border: 0.1rem solid whitesmoke;
-  padding: 5rem;
+  padding: 0.1rem 5rem;
   width: 100%;
   height: 100%;
-  background-color: khaki;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 0.5rem gray;
+  background-image: linear-gradient( rgb(177, 21, 21), rgb(87, 40, 40));
+}
+
+#opt{
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
 }
 
 .option{
   display: flex;
-  margin-bottom: 0.5rem;
   width: 100%;
+  height: 100%;
   font-size: 1.8rem;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
   background-color: whitesmoke;
@@ -22,19 +71,23 @@
 .option:hover{
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgb(85, 185, 215, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
+  transform: translateY(-0.4rem);
+  transition: transform 200ms;
 }
 
 .option-alphabet{
-  padding: 1.5rem 2.5rem;
-  background-color: slateblue;
+  display: block;
+  padding: 1rem 2rem;
+  background-image: linear-gradient( rgb(177, 21, 21), rgb(87, 40, 40));
   color: white;
+  height: auto;
 }
 
 .option-text{
-  padding: 1.5rem;
+  display: block;
+  padding: 1rem;
   width: 100%;
+  height: auto;
 }
 
 .correct{
@@ -43,8 +96,4 @@
 
 .incorrect{
   background-color: red;
-}
-
-.btn{
-  margin-top: 2rem;
 }

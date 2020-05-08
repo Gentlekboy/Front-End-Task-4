@@ -1,5 +1,5 @@
 :root{
-  background-color: aqua;
+  background-image: linear-gradient(rgb(70, 38, 38), rgb(48, 45, 45), rgb(70, 38, 38));
   font-size: 62.5%;
 }
 
@@ -10,41 +10,48 @@
   color: rgb(8, 39, 39);
 }
 
-h1, h2, h3, h4{
-  margin-bottom: 1rem;
-}
-
+/*TEXTS*/
 h1{
+  font-family: cursive;
   font-size: 5.4rem;
-  color: blue;
+  color: wheat;
   margin-bottom: 5rem;
-}
-
-h1 > span{
-  font-size: 2.4rem;
-  font-weight: 500;
+  padding: 1rem;
+  text-align: center;
 }
 
 h2{
-  font-size: 4.2rem;
-  font-weight: 700;
-  margin-bottom: 4rem;
+  font-size: 3.3rem;
+  font-family: cursive;
+  color: wheat;
+  padding: 1rem;
+  text-align: center;
 }
 
-h3{
-  font-size: 2.8rem;
-  font-weight: 500;
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#totalScore{
+  font-size: 5.4rem;
+  font-family: cursive;
+  color: yellow;
+  padding: 1rem;
+  text-align: center;
 }
 
 .container{
-  width: 100vw;
+  width: 80%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 80rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 4rem;
+  background-image: linear-gradient(gray, whitesmoke, gray);
+  box-shadow: 1rem 1rem 0.5rem rgb(112, 96, 96);
 }
 
 .container > *{
@@ -56,6 +63,11 @@ h3{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0.1rem solid whitesmoke;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 0.5rem gray;
+  background-image: linear-gradient( rgb(177, 21, 21), rgb(87, 40, 40));
+  padding: 1.5rem 1rem;
 }
 
 .justify-center{
@@ -70,53 +82,37 @@ h3{
   display: none;
 }
 
+.footer-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  bottom: 1rem;
+  border-top: 0.12rem solid rgb(87, 40, 40);
+  width: 58%;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
 /*Buttons*/
 .btn{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.8rem;
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.1rem solid blue;
+  border: 0.1rem solid rgb(233, 204, 151);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: blue;
-  background-color: antiquewhite;
+  color: black;
+  background-color: rgb(233, 204, 151);
 }
 .btn:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgb(85, 185, 215, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
-}
-
-.btn[disabled]:hover{
-  cursor: not-allowed;
-  box-shadow: none;
-  transform: none;
-}
-
-/*HEAD DISPLAY*/
-
-#head-display{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border-bottom: 0.1rem solid white;
-}
-
-.head-display-prefix{
-  font-size: 2rem;
-  text-align: center;
-}
-
-.head-display-main-text{
-  text-align: center;
-}
-
-#head-display-item{
-  margin-bottom: -4rem;
-}
-
-#question{
-  padding: 1.5rem;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(215, 137, 85, 0.5);
+  transform: scale(1.1);
+  transition: transform 250ms;
 }
