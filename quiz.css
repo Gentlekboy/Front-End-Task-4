@@ -35,6 +35,7 @@
   box-shadow: 0 0.4rem 1.4rem 0 rgb(112, 96, 96, 0.5);
 }
 
+/*BODY OF THE QUIZ*/
 #question{
   display: block;
   width: 100%;

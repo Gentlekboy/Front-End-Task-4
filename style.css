@@ -40,6 +40,7 @@ p{
   text-align: center;
 }
 
+/*BODY OF CONTAINER*/
 .container{
   width: 80%;
   height: 100vh;
@@ -52,10 +53,6 @@ p{
   padding: 2rem 4rem;
   background-image: linear-gradient(gray, whitesmoke, gray);
   box-shadow: 1rem 1rem 0.5rem rgb(112, 96, 96);
-}
-
-.container > *{
-  width: 100%;
 }
 
 .flex-column, .flex-center{
@@ -78,23 +75,6 @@ p{
   text-align: center;
 }
 
-.hidden{
-  display: none;
-}
-
-.footer-text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: absolute;
-  bottom: 1rem;
-  border-top: 0.12rem solid rgb(87, 40, 40);
-  width: 58%;
-  padding: 1rem 1rem 0.5rem 1rem;
-}
-
 /*Buttons*/
 .btn{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -115,4 +95,19 @@ p{
   box-shadow: 0 0.4rem 1.4rem 0 rgba(215, 137, 85, 0.5);
   transform: scale(1.1);
   transition: transform 250ms;
+}
+
+/*FOOTER*/
+
+.footer-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  bottom: 1rem;
+  border-top: 0.12rem solid rgb(87, 40, 40);
+  width: 58%;
+  padding: 1rem 1rem 0.5rem 1rem;
 }

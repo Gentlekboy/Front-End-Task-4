@@ -1,4 +1,3 @@
-//const saveScoreBtn = document.getElementById("saveScoreBtn");
 const finalScore = document.getElementById("totalScore");
 let mostRecentScore = localStorage.getItem("mostRecentScore");
 const scoreText = document.getElementById("scoreText");
@@ -12,8 +11,10 @@ let message6 = "Soft Work. Spot On! Your Score is:";
 let message7 = "Mad Oh! I Feel You! You Scored:";
 let message8 = "Mad! Mhed! Meddington! You Scored:";
 
+//TO DISPLAY USER'S SCORE
 totalScore.innerText = mostRecentScore;
 
+//TO DISPLAY MESSAGES BASED ON USER'S SCORE
 if (mostRecentScore <= 30) {
   scoreText.innerText = message1;
 }else if (mostRecentScore <= 40) {

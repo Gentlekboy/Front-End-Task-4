@@ -9,11 +9,7 @@ let scoreCount = 0;
 let questionCount = 0;
 let availableQuestions = [];
 
-/*let Option1 = document.getElementById("option1");
-let Option2 = document.getElementById("option2");
-let Option3 = document.getElementById("option3");
-let Option4 = document.getElementById("option4");*/
-
+//LIST OF ALL QUESTIONS STORED IN AN ARRAY OF OBJECT
 let questions = [
   {
     question: "How is COVID-19 passed on?",
@@ -97,9 +93,11 @@ let questions = [
   }
 ];
 
+//MAXIMUM NUMBER OF QUESTIONS AND SCOREPOINTS FOR EACH CORRECT ANSWER
 const scorePoint = 20;
 const maxQuestions = 5;
 
+//STARTGAME FUNCTION
 startGame = () => {
   scoreCount = 0;
   questionCount = 0;
@@ -107,32 +105,39 @@ startGame = () => {
   getNewQuestion();
 };
 
+//TO GET MAXIMUM OF 5 QUESTIONS
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCount >= maxQuestions) {
-    //go to the end page
+    //SAVE USER'S SCORE IN BROWSER
     localStorage.setItem("mostRecentScore", scoreCount);
 
+    //GO TO THE RESULT PAGE
     return window.location.assign("end.html");
   }
 
+//BUILDING THE QUESTION COUNTER
   questionCount++;
   questionCounter.innerHTML = questionCount + "/" + maxQuestions;
 
+//TO GET RANDOM QUESTIONS
   const pickQuestion = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[pickQuestion];
   question.innerText = currentQuestion.question;
 
+//SELECTING AN ANSWER
   options.forEach(option => {
     const dataNumber = option.dataset["number"];
     
     option.innerText = currentQuestion["option" + dataNumber];
   })
 
+//FOR US NOT TO REPEAT PICKING SAME QUESTION
   availableQuestions.splice(pickQuestion, 1);
 
   acceptanswer = true;
 };
 
+//TO SELECT AND VERIFY CORRECT ANSWERS
 options.forEach(option => {
   option.addEventListener("click", e =>{
     if (!acceptanswer) return;
@@ -141,6 +146,7 @@ options.forEach(option => {
     const selectedOption = e.target;
     const selectedAnswer = selectedOption.dataset["number"];
 
+//VERIFYING ANSWERS
     const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
     selectedOption.parentElement.classList.add(classToApply);
@@ -158,9 +164,11 @@ options.forEach(option => {
   });
 });
 
+//INCREMENTING THE SCORE ON THE SCORE COUNTER
 incrementScoreCount = num => {
   scoreCount += num;
   scoreCounter.innerHTML = scoreCount;
 }
 
+//CALLING MY STARTGAME FUNCTION
 startGame();
