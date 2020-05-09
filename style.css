@@ -12,7 +12,7 @@
 
 /*TEXTS*/
 h1{
-  font-family: cursive;
+  font-family: 'Algerian', Helvetica, Arial, sans-serif;
   font-size: 7.5rem;
   color: wheat;
   margin-bottom: 5rem;
@@ -22,7 +22,7 @@ h1{
 
 h2{
   font-size: 3.3rem;
-  font-family: cursive;
+  font-family: monospace, Helvetica, Arial, sans-serif;
   color: wheat;
   padding: 1rem;
   text-align: center;
@@ -135,5 +135,5 @@ p{
   #totalScore{
     font-size: 3rem;
   }
-  
+
 }
