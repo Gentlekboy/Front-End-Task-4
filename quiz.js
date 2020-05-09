@@ -153,14 +153,13 @@ options.forEach(option => {
 
     if(classToApply === "correct") {
       incrementScoreCount(scorePoint);
-      selectedOption.parentElement.classList.add(classToApply);
     }
 
     setTimeout(() => {
       selectedOption.parentElement.classList.remove(classToApply);
-
+      
       document.getElementById("next").addEventListener("click", getNewQuestion);
-    }, 1000);
+    }, 2000);
   });
 });
 
