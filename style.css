@@ -104,138 +104,35 @@ p{
   text-align: center;
   font-size: 2.5rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: absolute;
-  bottom: 1rem;
+  position: fixed;
+  bottom: 0;
   border-top: 0.12rem solid rgb(87, 40, 40);
   width: 58%;
   padding: 1rem 1rem 0.5rem 1rem;
 }
 
-@media screen and (max-width: 1300px){
-
-  .container{
-    width: 90%;
-  }
-
-  h1{
-    font-size: 7.2rem;
-  }
-
-  h2{
-    font-size: 2.4rem;
-  }
-
-  .footer-text{
-    font-size: 2.5rem;
-  }
-
-}
-
-@media screen and (max-width: 1030px){
-
-  .container{
-    width: 88%;
-  }
-
-  h1{
-    font-size: 7rem;
-  }
-
-  h2{
-    font-size: 2.3rem;
-  }
-
-  .footer-text{
-    font-size: 2.5rem;
-  }
-
-}
-
-@media screen and (max-width: 724px){
-
-  h1{
-    font-size: 4rem;
-  }
-
-  h2{
-    font-size: 2.2rem;
-  }
-
-  .footer-text{
-    font-size: 1.4rem;
-  }
-
-}
-
-@media screen and (max-width: 503px){
-
-  h1{
-    font-size: 3.2rem;
-  }
-
-  h2{
-    font-size: 2.1rem;
-  }
-
-  .footer-text{
-    font-size: 1.35rem;
-  }
-
-}
-
-@media screen and (max-width: 422px){
-
-  .container{
-    width: 80%;
-  }
-
-  h1{
-    font-size: 300%;
-  }
-
-  h2{
-    font-size: 2rem;
-  }
-
-  .footer-text{
-    font-size: 120%;
-  }
-
-}
-
-@media screen and (max-height: 420px){
-
-  #result-footer{
-    display: none;
-  }
-
-  .footer-text{
-    font-size: 1.5rem;
-    border-top: none;
-  }
-
-}
-
-@media screen and (max-height: 350px){
-
-  .container{
-    width: 88%;
-  }
-
-  h2{
-    font-size: 1.5rem;
-  }
+@media screen and (max-width: 590px){
 
   h1{
     font-size: 3.5rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
   }
 
   .footer-text{
-    font-size: 1.5rem;
-    border-top: none;
+    font-size: 1.3rem;
+    padding: 0.5rem;
   }
 
-  #result-footer{
-    display: none;
+  .container{
+    padding: 1rem 1.5rem;
+  }
+
+  #scoreText{
+    font-size: 1.7rem;
+  }
+
+  #totalScore{
+    font-size: 3rem;
   }
 }
