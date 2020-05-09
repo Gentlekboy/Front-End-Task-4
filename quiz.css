@@ -162,10 +162,12 @@
   .option-text{
     font-size: 1.45rem;
     padding: 0.5rem;
+    font-weight: bold;
   }
 
   .option-alphabet{
     padding: 0.7rem;
+    font-weight: bold;
   }
 
 }
