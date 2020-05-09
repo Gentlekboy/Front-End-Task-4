@@ -38,7 +38,7 @@ let questions = [
   {
     question: "Are people living with HIV always more at risk?",
     option1: "Yes – people with HIV have weaker immune systems",
-    option2: "No – people who adhere to antiretroviral treatment (ART) and have a high CD4 count aren’t more at risk",
+    option2: "No – people who adhere to ART and have a high CD4 count aren’t more at risk",
     option3: "Maybe",
     option4: "Not sure",
     answer: 2
